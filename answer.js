@@ -1,10 +1,6 @@
 export const answers = [
   
-    { 
-        answer:'It is certain.',
-        class:'good'
-    },
-
+    {answer: 'It is certain.',class:'good'},
     {answer: 'It is decidedly so.', color: '#3B8270'},
     {answer: 'Without a doubt.', color: '#3B8270'},
     {answer: 'Yes definitely.', color: '#3B8270'},
@@ -16,10 +12,10 @@ export const answers = [
     {answer: 'Signs point to yes.', color: '#3B8270'},
 
     {answer: 'Reply hazy, try again.', color: '#F0D451',},
-    {answer: 'Ask again later.', color: '#F0D451',},
-    {answer: 'Better not tell you now.', color: '#F0D451',},
-    {answer: 'Cannot predict now.', color: '#F0D451',},
-    {answer: 'Concentrate and ask again.', color: '#F0D451',},
+    {answer: 'Ask again later.', color: '#F0D451'},
+    {answer: 'Better not tell you now.', color: '#F0D451'},
+    {answer: 'Cannot predict now.', color: '#F0D451'},
+    {answer: 'Concentrate and ask again.', color: '#F0D451'},
 
     {answer: 'Dont count on it.', color: '#B5130E'},
     {answer: 'My reply is no.', color: '#B5130E'},
