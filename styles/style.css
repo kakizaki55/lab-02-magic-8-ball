@@ -40,10 +40,15 @@ main {
     width: 500px;
     border-radius: 50%;
 
+
 }
 #quest{
     margin: 20px;
     border: black solid 3px;
+    
+}
+#mainpage{
+    background-color: #1C1C1C;
 }
 #middle-ball{
     display: flex;
@@ -55,7 +60,21 @@ main {
     width: 200px;
     border-radius: 50%;
     color: black;
-
+    background-image: url(../assets/number8.png);
+    background-position: center;
+    background-size:75%;
+    background-repeat:no-repeat;
+   
+    
+}
+#eight-ball-answer{
+    width: 200px;
+}
+audio{
+    margin: 50px;
+}
+h1{
+    color: white;
 }
 
 header {
@@ -74,10 +93,7 @@ footer {
 }
 
 
-h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
+
 header img {
     height: var(--header-height);
 }
