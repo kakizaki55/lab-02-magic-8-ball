@@ -1,23 +1,24 @@
-import { answers } from './answer.js';
+import { answers, randomNumber} from './answer.js';
 
 
 const ballAnswer = document.getElementById('eight-ball-answer');
 const askButton =document.getElementById('ask-button');
 const questionArea = document.getElementById('quest');
 
-function randomNumber(){
-  return Math.floor(Math.random()* answers.length);
-}
-
+// function randomNumber(maxNum){
+//   return Math.floor(Math.random()* maxNum);
+// }
 // let randomIndex = randomNumber()
-
 // console.log(randomIndex);
 // console.log(answers[randomIndex])
 askButton.addEventListener('click', ()=>{
-
-  let randomIndex = randomNumber()
-  ballAnswer.textContent = answers[randomIndex] 
-  questionArea.textContent = '';
+  if(questionArea.value === ''){
+    ballAnswer.textContent = 'please ask a question..'
+  }else{
+    let randomIndex = randomNumber(answers.length);
+    ballAnswer.textContent = answers[randomIndex];
+    questionArea.value = '';
+  }
 });
 
 

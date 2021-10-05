@@ -23,3 +23,6 @@ export const answers = [
     'very doubtful.'
 
 ]
+export function randomNumber(maxNum){
+    return Math.floor(Math.random()* maxNum);
+  }
