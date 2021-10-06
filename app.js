@@ -5,6 +5,7 @@ const ballAnswer = document.getElementById('eight-ball-answer');
 const askButton =document.getElementById('ask-button');
 const questionArea = document.getElementById('quest');
 const the8Ball = document.getElementById('the-8-ball');
+const mainPage = document.getElementById('main-page');
 let askCount = 0;
 
 // function randomNumber(maxNum){
@@ -26,7 +27,7 @@ askButton.addEventListener('click', ()=>{
     askCount ++;
 
   } else if (askCount === 2){
-    ballAnswer.textContent = 'come on...really? ask me a question.'
+    ballAnswer.textcontent = 'come on...really? ask me a question.'
     askCount ++;
   
   } else if (!questionArea.value){
@@ -38,10 +39,21 @@ askButton.addEventListener('click', ()=>{
     ballAnswer.textContent = answers[randomIndex].answer;
     questionArea.value = '';
     the8Ball.style.background = answers[randomIndex].color;
+    askCount = 0;
   }
 });
 
+function random_bg_color() {
+  var x = Math.floor(Math.random() * 256);
+  var y = Math.floor(Math.random() * 256);
+  var z = Math.floor(Math.random() * 256);
+  var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+console.log(bgColor);
 
+  mainPage.style.background = bgColor;
+  }
+  setInterval(function(){random_bg_color()}, 3000);
+  
 // ballAnswer.textContent = answers[randomIndex] 
 
 
